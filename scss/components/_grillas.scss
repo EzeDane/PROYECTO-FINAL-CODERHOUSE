@@ -1,0 +1,36 @@
+/* INICIO ESTILOS HOJA INDEX.HTML */
+/* GRID PROPIEDADES INDEX */
+
+.grilla-contenedor {
+    display: grid;
+    grid-template-areas: 
+    "cabecera cabecera cabecera cabecera" 
+    "principal principal article article" 
+    "article-2 article-2 article-2 article-2" 
+    "pie pie pie pie";
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
+    gap: 30px;
+    background-color: nth($colores , 1 );
+}
+
+
+.cabecera-contendor {
+    grid-area: cabecera;
+}
+
+.container-principal {
+    grid-area: principal;
+}
+
+.seccion-1 {
+    grid-area: article;
+}
+
+.seccion-2 {
+    grid-area: article-2;
+}
+
+footer {
+    grid-area: pie;
+}

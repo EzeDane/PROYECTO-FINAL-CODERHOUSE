@@ -1,0 +1,49 @@
+/* Estilos flex del header */
+
+.cabecera-contendor {
+    background: $background-header;
+    @extend %flex-prop;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 10;
+}
+
+/* Estilos logo header */
+
+.logo-main {
+    display: flex;
+    margin: map-get($mg-pad , margen);
+    width: 150px;
+}
+
+/* Estilos barra navegación | header */
+
+.barra-navegacion ul li a {
+    font-family: $fuente-ppal;
+    color: nth($colores, 4);
+    background-color: nth($colores, 1);
+    font-size: medium;
+    margin: map-get($mg-pad , margen);
+    padding: map-get($mg-pad , pad);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: $sombra-oscura;
+    font-weight: bolder;
+}
+
+/* Animaciones de la NAV BAR */
+
+.barra-navegacion ul li a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid nth($colores, 5);
+    background-color: nth($colores, 4);
+    color: nth($colores, 2);
+    border-radius: 10px;
+}
+
+.barra-navegacion ul li a:active {
+    background-color: nth($colores, 3);
+    color: nth($colores, 2);
+}

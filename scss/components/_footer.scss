@@ -1,0 +1,14 @@
+/* Estilos footer o Pie de página */
+
+footer {
+    @extend %flex-prop;
+    background-color: nth($colores , 5);
+    width: 100%;
+    padding: 20px;
+}
+
+footer p {
+    color: nth($colores , 2);
+    font-family: $fuente-sec;
+    font-weight: bold;
+}

@@ -1,0 +1,62 @@
+/* Media query general grid LAYOUT MOBILE*/
+@media only screen and (max-width: 460px) {
+    .grilla-contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+        grid-template-areas: 
+        'cabecera' 
+        'principal' 
+        'article' 
+        'article-2' 
+        'pie';
+        gap: 15px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .seccion-2 {
+        margin: 15px;
+    }
+
+    .container-principal h1,
+    .seccion-1 p {
+        text-align: center;
+    }
+}
+
+/* Media query general grid LAYOUT TABLET*/
+@media only screen and (max-width: 680px) {
+    .grilla-contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+        grid-template-areas: 
+        'cabecera cabecera' 
+        'principal principal' 
+        'article article' 
+        'article-2 article-2' 
+        'pie pie';
+        gap: 15px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .seccion-2 {
+        margin: 15px;
+    }
+
+    .logo-main {
+        width: 160px;
+    }
+}
+
+/* FIN ESTILOS HOJA INDEX.HTML */

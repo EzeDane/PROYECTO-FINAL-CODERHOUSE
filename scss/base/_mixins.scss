@@ -1,0 +1,8 @@
+// Mixing para video estilo hoja TESTIMONIOS
+
+@mixin iframes-videos ($margenes, $longitud, $borde, $sombra-caja) {
+    margin: $margenes;
+    width: $longitud;
+    border-radius: $borde;
+    box-shadow: $sombra-caja;
+}

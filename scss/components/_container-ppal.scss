@@ -1,0 +1,78 @@
+/* Estilos container principal */
+
+.container-principal {
+    @extend %propiedad-flex-ppal;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-grande-farmacia {
+    display: flex;
+    margin: map-get($mg-pad , margen);
+    padding: map-get($mg-pad , pad);
+    width: 380px;
+}
+
+.container-principal h1 {
+    display: flex;
+    justify-content: center;
+    background-color: nth($colores , 6);
+    font-family: $fuente-ppal;
+    color: nth($colores , 2);
+    margin-top: 0;
+    padding: map-get($mg-pad , pad);
+    border-radius: 20px 10px;
+    box-shadow: $sombra-oscura;
+}
+
+.seccion-1 {
+    @extend %propiedad-flex-ppal;
+    padding: map-get($mg-pad , pad);
+    margin: map-get($mg-pad , margen);
+    height: fit-content;
+    background-color: nth($colores , 6);
+    font-family: $fuente-sec;
+    border-radius: $border-radio-ppal;
+    box-shadow: $sombra-oscura;
+    transition: all 0.4s ease-out;
+}
+
+.seccion-1:hover {
+    cursor: help;
+    box-shadow: $sombra-oscura;
+}
+
+.seccion-1 h2 {
+    color: nth($colores , 1);
+    margin: 5px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.seccion-1 h2 span {
+    color: nth($colores , 7);
+}
+
+.seccion-1 p {
+    text-align: left;
+    font-size: large;
+    color: nth($colores , 1);
+}
+
+.seccion-1 p strong {
+    color: nth($colores , 7);
+}
+
+/* ESTILOS TARJETAS */
+
+.tarjetas {
+    box-shadow: $sombra-negra;
+    margin: map-get($mg-pad, margen);
+    transition: all 0.5s ease;
+}
+
+.tarjetas:hover {
+    cursor: pointer;
+    box-shadow: $sombra-verde-osc;
+    border-image: space;
+}

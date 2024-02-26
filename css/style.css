@@ -1,3 +1,329 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
 
+/* Comportamiento scroll en el html */
+html {
+  scroll-behavior: smooth;
+}
+
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Nunito', sans-serif; */
+footer, .cabecera-contendor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seccion-1, .container-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-testmonio, h2 {
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* INICIO ESTILOS HOJA INDEX.HTML */
+/* GRID PROPIEDADES INDEX */
+.grilla-contenedor {
+  display: grid;
+  grid-template-areas: "cabecera cabecera cabecera cabecera" "principal principal article article" "article-2 article-2 article-2 article-2" "pie pie pie pie";
+  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(min(100px, 100%), 1fr));
+  gap: 30px;
+  background-color: #DFF3E3;
+}
+
+.cabecera-contendor {
+  grid-area: cabecera;
+}
+
+.container-principal {
+  grid-area: principal;
+}
+
+.seccion-1 {
+  grid-area: article;
+}
+
+.seccion-2 {
+  grid-area: article-2;
+}
+
+footer {
+  grid-area: pie;
+}
+
+/* Estilos flex del header */
+.cabecera-contendor {
+  background: linear-gradient(90deg, rgb(240, 247, 244) 18%, rgb(56, 181, 62) 100%);
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  z-index: 10;
+}
+
+/* Estilos logo header */
+.logo-main {
+  display: flex;
+  margin: 15px;
+  width: 150px;
+}
+
+/* Estilos barra navegación | header */
+.barra-navegacion ul li a {
+  font-family: "Noto Sans", sans-serif;
+  color: #191516;
+  background-color: #DFF3E3;
+  font-size: medium;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: bolder;
+}
+
+/* Animaciones de la NAV BAR */
+.barra-navegacion ul li a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #444444;
+  background-color: #191516;
+  color: #F0F7F4;
+  border-radius: 10px;
+}
+
+.barra-navegacion ul li a:active {
+  background-color: #707070;
+  color: #F0F7F4;
+}
+
+/* Estilos container principal */
+.container-principal {
+  width: 100%;
+  padding: 10px;
+}
+
+.logo-grande-farmacia {
+  display: flex;
+  margin: 15px;
+  padding: 10px;
+  width: 380px;
+}
+
+.container-principal h1 {
+  display: flex;
+  justify-content: center;
+  background-color: #38B53E;
+  font-family: "Noto Sans", sans-serif;
+  color: #F0F7F4;
+  margin-top: 0;
+  padding: 10px;
+  border-radius: 20px 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-1 {
+  padding: 10px;
+  margin: 15px;
+  height: fit-content;
+  background-color: #38B53E;
+  font-family: "Nunito", sans-serif;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-out;
+}
+
+.seccion-1:hover {
+  cursor: help;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-1 h2 {
+  color: #DFF3E3;
+  margin: 5px;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.seccion-1 h2 span {
+  color: #BA151B;
+}
+
+.seccion-1 p {
+  text-align: left;
+  font-size: large;
+  color: #DFF3E3;
+}
+
+.seccion-1 p strong {
+  color: #BA151B;
+}
+
+/* ESTILOS TARJETAS */
+.tarjetas {
+  box-shadow: 0 4px 10px 8px rgba(0, 0, 0, 0.3);
+  margin: 15px;
+  transition: all 0.5s ease;
+}
+
+.tarjetas:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 10px 15px rgba(12, 177, 1, 0.3);
+  border-image: space;
+}
+
+/* Estilos footer o Pie de página */
+footer {
+  background-color: #444444;
+  width: 100%;
+  padding: 20px;
+}
+
+footer p {
+  color: #F0F7F4;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+/* Media query general grid LAYOUT MOBILE*/
+@media only screen and (max-width: 460px) {
+  .grilla-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    grid-template-areas: "cabecera" "principal" "article" "article-2" "pie";
+    gap: 15px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .seccion-2 {
+    margin: 15px;
+  }
+  .container-principal h1,
+  .seccion-1 p {
+    text-align: center;
+  }
+}
+/* Media query general grid LAYOUT TABLET*/
+@media only screen and (max-width: 680px) {
+  .grilla-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    grid-template-areas: "cabecera cabecera" "principal principal" "article article" "article-2 article-2" "pie pie";
+    gap: 15px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .seccion-2 {
+    margin: 15px;
+  }
+  .logo-main {
+    width: 160px;
+  }
+}
+/* FIN ESTILOS HOJA INDEX.HTML */
+/* INCIO ESTILOS HOJA TESTIMONIOS */
+.contenedor-testimonios {
+  background-color: #444444;
+}
+
+/* Estilos contenido articulo */
+.opinion-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 10px;
+  height: 100%;
+}
+
+.opinion-container p {
+  font-family: "Nunito", sans-serif;
+  color: #F0F7F4;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #444444;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.card-testmonio {
+  background-color: #444444;
+  margin: 15px;
+  padding: 10px;
+  color: #DFF3E3;
+  transition: all 0.4s ease-out;
+}
+
+.card-testmonio:hover {
+  cursor: text;
+  box-shadow: 1px 1px 10px 8px #38B53E;
+  background-color: #38B53E;
+}
+
+/* Transition CARDS TESTIMONIOS */
+.slide-in-bck-center {
+  -webkit-animation: slide-in-bck-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bck-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/**
+   * ----------------------------------------
+   * animation slide-in-bck-center
+   * ----------------------------------------
+   */
+@-webkit-keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+/* Estilos video IFRAME | MIXIN*/
+.video-estilo {
+  margin: 30px;
+  width: 95%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 4px 4px rgba(0, 1, 0, 0.2);
+}
 
 /*# sourceMappingURL=style.css.map */

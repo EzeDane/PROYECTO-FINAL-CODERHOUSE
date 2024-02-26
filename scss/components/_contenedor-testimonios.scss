@@ -1,0 +1,93 @@
+/* INCIO ESTILOS HOJA TESTIMONIOS */
+
+.contenedor-testimonios {
+    background-color: nth($colores , 5);
+}
+
+/* Estilos contenido articulo */
+
+.opinion-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: $border-radio-ppal;
+    margin: map-get($mg-pad , margen);
+    padding: map-get($mg-pad , pad);
+    height: 100%;
+}
+
+.opinion-container p {
+    font-family: $fuente-sec;
+    color: nth($colores , 2);
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    color: nth($colores , 5);
+    font-family: $fuente-ppal;
+    @extend %text-propiedades;
+}
+
+
+.card-testmonio {
+    background-color: nth($colores , 5);
+    margin: map-get($mg-pad , margen);
+    padding: 10px;
+    @extend %text-propiedades;
+    color: nth($colores , 1);
+    transition: all 0.4s ease-out;
+}
+
+.card-testmonio:hover {
+    cursor: text;
+    box-shadow: 1px 1px 10px 8px nth($colores , 6);
+    background-color: nth($colores , 6);
+}
+
+
+/* Transition CARDS TESTIMONIOS */
+
+.slide-in-bck-center {
+    -webkit-animation: slide-in-bck-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-bck-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/**
+   * ----------------------------------------
+   * animation slide-in-bck-center
+   * ----------------------------------------
+   */
+@-webkit-keyframes slide-in-bck-center {
+    0% {
+        -webkit-transform: translateZ(600px);
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bck-center {
+    0% {
+        -webkit-transform: translateZ(600px);
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+/* Estilos video IFRAME | MIXIN*/
+
+.video-estilo {
+    @include iframes-videos (30px, 95%, 20px, 3px 3px 4px 4px rgba(0, 1, 0, 0.2))
+}

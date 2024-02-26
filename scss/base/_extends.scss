@@ -1,0 +1,23 @@
+// Estilos FLEX para secciones
+
+
+%flex-prop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+
+%propiedad-flex-ppal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+};
+
+// Estilos textos varios
+
+%text-propiedades {
+    text-align: center;
+    border-radius: $border-radio-ppal;
+}
