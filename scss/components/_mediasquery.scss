@@ -1,5 +1,5 @@
 /* Media query general grid LAYOUT MOBILE*/
-@media only screen and (max-width: 460px) {
+@include media-up(sm) {
     .grilla-contenedor {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
@@ -30,7 +30,7 @@
 }
 
 /* Media query general grid LAYOUT TABLET*/
-@media only screen and (max-width: 680px) {
+@include media-up (md) {
     .grilla-contenedor {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
@@ -59,6 +59,37 @@
     }
 }
 
+@include media-up (lg) {
+
+    .grilla-contenedor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+        grid-template-areas:
+            'cabecera cabecera cabecera'
+            'principal principal principal'
+            'article article article'
+            'article-2 article-2 article-2'
+            'pie pie pie';
+        gap: 15px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .seccion-2 {
+        margin: 15px;
+    }
+
+    .logo-main {
+        width: 180px;
+    }
+
+}
+
 /* FIN ESTILOS HOJA INDEX.HTML */
 
 
@@ -66,7 +97,7 @@
 
 /* Media query para hoja testimonios FORMATO MOBILE */
 
-@media only screen and (max-width: 460px) {
+@include media-up (sm) {
     .contenedor-testimonios {
         display: grid;
         grid-template-areas:
@@ -77,6 +108,11 @@
             'pie';
         grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
         gap: 30px;
+    }
+
+    .opinion-container h2 {
+        font-size: 18px;
+        background-color: nth($colores , 4 );
     }
 
     footer {
@@ -97,7 +133,27 @@
 }
 
 /* Media query para hoja testimonios FORMATO TABLET */
-@media only screen and (max-width: 680px) {
+@include media-up (md) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .video-estilo {
+        width: 100%;
+        height: 350px;
+        margin: 20px;
+    }
+
+    .opinion-container {
+        width: 100%;
+    }
+}
+
+/* Media query para hoja testimonios FORMATO DESKTOP */
+@include media-up (lg) {
     .contenedor-testimonios {
         display: grid;
         grid-template-areas:
@@ -118,7 +174,7 @@
     }
 
     .video-estilo {
-        width: 95%;
+        width: 98%;
         height: 350px;
         margin: 20px;
     }
@@ -131,7 +187,82 @@
 
 
 /* Media query para MOBILE PRODUCTOS */
-@media only screen and (max-width: 460px) {
+@include media-up (sm) {
+    .carrusel-contenedor-principal {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carrusel-contenedor-principal h2 {
+        margin: 10px;
+        width: 90%;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .slides-personales {
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .slides-personales h5 {
+        display: none;
+    }
+
+    .slides-personales p {
+        font-size: 12px;
+    }
+
+
+    .detalles-fotos {
+        width: 50%;
+        margin: 0;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .container {
+        gap: 2px 2px;
+    }
+}
+
+/* Media query para TABLET PRODUCTOS*/
+@include media-up (md) {
+    .carrusel-contenedor-principal {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carrusel-contenedor-principal h2 {
+        font-size: x-large;
+    }
+
+    .slides-personales {
+        width: 95%;
+    }
+
+    .slides-personales h5 {
+        display: none;
+    }
+
+    .slides-personales h5 p {
+        font-size: 20px;
+    }
+
+    .container {
+        margin: 0;
+    }
+}
+
+@include media-up (lg) {
     .carrusel-contenedor-principal {
         width: 100%;
         height: 100%;
@@ -174,35 +305,6 @@
     }
 }
 
-/* Media query para TABLET PRODUCTOS*/
-@media only screen and (max-width: 680px) {
-    .carrusel-contenedor-principal {
-        width: 100%;
-        height: 100%;
-    }
-
-    .carrusel-contenedor-principal h2 {
-        font-size: 30px;
-    }
-
-    .slides-personales {
-        width: 95%;
-    }
-
-    .slides-personales h5 {
-        font-size: 25px;
-        padding: 0;
-    }
-
-    .slides-personales h5 p {
-        font-size: 20px;
-    }
-
-    .container {
-        margin: 0;
-    }
-}
-
 
 /* Final hoja estilos productos */
 
@@ -210,14 +312,18 @@
 
 /* Media query para hoja CONTACTO FORMATO MOBILE */
 
-@media only screen and (max-width: 460px) {
+@include media-up (sm) {
 
     .contenedor-formulario {
-
-        width: 100%;
-        margin: 10px;
+        width: max-content;
+        margin: 15px auto;
         height: fit-content;
     }
+
+    .contenedor-formulario h2 {
+        font-size: 20px;
+    }
+
 
 
     .btnformulario {
@@ -228,52 +334,59 @@
 }
 
 /* Media query para hoja CONTACTO FORMATO TABLET */
-@media only screen and (max-width: 680px) {
+@include media-up (md) {
     .contenedor-formulario {
         width: 50%;
     }
 }
 
 
-
-
 /* Media query para hoja PERSONAL FORMATO MOBILE */
 
-@media only screen and (max-width: 460px) {
+@include media-up (sm) {
     .personalcontainer {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        align-items: center;
         width: 100%;
+        height: 100%;
     }
 
     .personaldetalle {
         width: 100%;
-        margin: 10px;
+        margin: 20px;
     }
+
 
     .img-personal {
         width: 100%;
         border-radius: 20px;
+        height: fit-content;
     }
 
     .estilo-acordeon {
         width: 100%;
-        margin: 10px;
+        margin: 20px;
+        height: fit-content;
     }
 }
 
 /* Media query para hoja PERSONAL FORMATO TABLET */
-@media only screen and (max-width: 680px) {
+@include media-up (md) {
     .personalcontainer {
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
         width: fit-content;
+    }
+
+    .personalcontainer p, .personalcontainer span {
+        text-align: center;
+        margin: 10px;
     }
 
     .personaldetalle {
         width: 100%;
-        margin: 10px;
+        margin: 20px;
     }
 
     .img-personal {
@@ -291,7 +404,7 @@
 
 /* Media query para hoja SUCURSALES FORMATO MOBILE */
 
-@media only screen and (max-width: 460px) {
+@include media-up (sm) {
 
     .ubicacion-contenido {
         width: 100%;
@@ -314,7 +427,7 @@
 }
 
 /* Media query para hoja SUCURSALES FORMATO TABLET */
-@media only screen and (max-width: 680px) {
+@include media-up (md) {
 
     .ubicacion-contenido {
         width: 100%;

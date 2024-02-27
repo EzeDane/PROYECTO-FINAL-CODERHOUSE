@@ -10,7 +10,7 @@
 
 .contenedor-formulario {
     font-family: $fuente-ppal;
-    width: 30%;
+    width: 40%;
     height: fit-content;
     margin: 40px auto;
     padding: 20px;
@@ -72,7 +72,6 @@ textarea:hover {
 
 textarea:focus {
     cursor: text;
-    transform: scale(1.01);
     box-shadow: 0 0 10px rgba(56, 181, 62, 1);
 }
 
