@@ -1,0 +1,63 @@
+/* Inicio estilos hoja SUCURSALES */
+
+.ubicacion-contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background-color: nth($colores , 3);
+    text-align: center;
+    font-family: $fuente-sec;
+    color: nth($colores , 2 );
+    height: 80vh;
+}
+
+.contenedor-cards {
+    @extend %propiedad-flex-ppal;
+    background-color: nth($colores , 5);
+    margin: map-get($mg-pad , margen );
+    padding: map-get($mg-pad , pad );
+    border-radius: $border-radio-ppal;
+    transition: all 0.3s ease-in-out;
+}
+
+.contenedor-cards h3 {
+    text-transform: uppercase;
+}
+
+.contenedor-cards:hover {
+    cursor: pointer;
+    box-shadow: $sombra-verde-clara;
+    transform: scale(1.03);
+}
+
+
+.texto-lugar-descripcion {
+    margin: map-get($mg-pad , margen );
+    padding: map-get($mg-pad , pad );
+    width: 80%;
+    @extend %text-propiedades;
+    border: 3px solid nth($colores , 4);
+
+}
+
+.conten-lugar {
+    margin: map-get($mg-pad , margen );
+    padding: 10px;
+    background-color: nth($colores , 4 );
+    border-radius: $border-radio-ppal;
+    box-shadow: $sombra-verde-clara;
+}
+
+.conten-lugar iframe {
+    padding: 10px;
+    border-radius: $border-radio-ppal;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.conten-lugar iframe:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}

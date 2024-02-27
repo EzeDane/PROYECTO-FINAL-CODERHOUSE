@@ -1,0 +1,18 @@
+/* Estilos para el acordeon */
+
+.estilo-acordeon {
+    font-family: $fuente-sec;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    box-shadow: $sombra-oscura;
+    transition: all 0.4s ease-in;
+}
+
+.estilo-acordeon:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}

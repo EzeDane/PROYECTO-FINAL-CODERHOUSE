@@ -3,12 +3,12 @@
     .grilla-contenedor {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
-        grid-template-areas: 
-        'cabecera' 
-        'principal' 
-        'article' 
-        'article-2' 
-        'pie';
+        grid-template-areas:
+            'cabecera'
+            'principal'
+            'article'
+            'article-2'
+            'pie';
         gap: 15px;
     }
 
@@ -34,12 +34,12 @@
     .grilla-contenedor {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
-        grid-template-areas: 
-        'cabecera cabecera' 
-        'principal principal' 
-        'article article' 
-        'article-2 article-2' 
-        'pie pie';
+        grid-template-areas:
+            'cabecera cabecera'
+            'principal principal'
+            'article article'
+            'article-2 article-2'
+            'pie pie';
         gap: 15px;
     }
 
@@ -60,3 +60,279 @@
 }
 
 /* FIN ESTILOS HOJA INDEX.HTML */
+
+
+
+
+/* Media query para hoja testimonios FORMATO MOBILE */
+
+@media only screen and (max-width: 460px) {
+    .contenedor-testimonios {
+        display: grid;
+        grid-template-areas:
+            'cabecera'
+            'articulo1'
+            'video'
+            'video'
+            'pie';
+        grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+        gap: 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .video-estilo {
+        height: 350px;
+    }
+
+    .opinion-container {
+        width: fit-content;
+        margin: 10px;
+    }
+}
+
+/* Media query para hoja testimonios FORMATO TABLET */
+@media only screen and (max-width: 680px) {
+    .contenedor-testimonios {
+        display: grid;
+        grid-template-areas:
+            'cabecera cabecera'
+            'articulo1 articulo1'
+            'video video'
+            'video video'
+            'pie pie';
+        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+        gap: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .video-estilo {
+        width: 95%;
+        height: 350px;
+        margin: 20px;
+    }
+
+    .opinion-container {
+        width: fit-content;
+    }
+}
+
+
+
+/* Media query para MOBILE PRODUCTOS */
+@media only screen and (max-width: 460px) {
+    .carrusel-contenedor-principal {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carrusel-contenedor-principal h2 {
+        margin: 10px;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .slides-personales {
+        width: 95%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .slides-personales h5 {
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .slides-personales h5 p {
+        font-size: 10px;
+    }
+
+    .detalles-fotos {
+        width: 40%;
+        margin: 0;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-grow: 1;
+    }
+}
+
+/* Media query para TABLET PRODUCTOS*/
+@media only screen and (max-width: 680px) {
+    .carrusel-contenedor-principal {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carrusel-contenedor-principal h2 {
+        font-size: 30px;
+    }
+
+    .slides-personales {
+        width: 95%;
+    }
+
+    .slides-personales h5 {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .slides-personales h5 p {
+        font-size: 20px;
+    }
+
+    .container {
+        margin: 0;
+    }
+}
+
+
+/* Final hoja estilos productos */
+
+
+
+/* Media query para hoja CONTACTO FORMATO MOBILE */
+
+@media only screen and (max-width: 460px) {
+
+    .contenedor-formulario {
+
+        width: 100%;
+        margin: 10px;
+        height: fit-content;
+    }
+
+
+    .btnformulario {
+        margin: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+/* Media query para hoja CONTACTO FORMATO TABLET */
+@media only screen and (max-width: 680px) {
+    .contenedor-formulario {
+        width: 50%;
+    }
+}
+
+
+
+
+/* Media query para hoja PERSONAL FORMATO MOBILE */
+
+@media only screen and (max-width: 460px) {
+    .personalcontainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .personaldetalle {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .img-personal {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .estilo-acordeon {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+/* Media query para hoja PERSONAL FORMATO TABLET */
+@media only screen and (max-width: 680px) {
+    .personalcontainer {
+        flex-direction: column;
+        height: 100vh;
+        width: fit-content;
+    }
+
+    .personaldetalle {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .img-personal {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .estilo-acordeon {
+        width: 80%;
+        margin: 20px;
+    }
+}
+
+
+
+/* Media query para hoja SUCURSALES FORMATO MOBILE */
+
+@media only screen and (max-width: 460px) {
+
+    .ubicacion-contenido {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .contenedor-cards {
+        width: 95%;
+        margin: 30px;
+    }
+
+    .conten-lugar {
+        width: 95%;
+    }
+
+    .conten-lugar iframe {
+        width: 100%;
+    }
+}
+
+/* Media query para hoja SUCURSALES FORMATO TABLET */
+@media only screen and (max-width: 680px) {
+
+    .ubicacion-contenido {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .contenedor-cards {
+        width: 95%;
+        margin: 20px;
+    }
+
+    .conten-lugar {
+        width: 95%;
+    }
+
+    .conten-lugar iframe {
+        width: 100%;
+    }
+
+}

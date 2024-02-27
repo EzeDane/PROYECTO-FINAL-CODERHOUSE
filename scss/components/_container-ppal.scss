@@ -21,7 +21,7 @@
     color: nth($colores , 2);
     margin-top: 0;
     padding: map-get($mg-pad , pad);
-    border-radius: 20px 10px;
+    border-radius: $border-radio-ppal;
     box-shadow: $sombra-oscura;
 }
 
@@ -46,7 +46,7 @@
     color: nth($colores , 1);
     margin: 5px;
     padding: 10px;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .seccion-1 h2 span {
@@ -54,9 +54,10 @@
 }
 
 .seccion-1 p {
-    text-align: left;
-    font-size: large;
+    text-align: justify;
+    font-size: 20px;
     color: nth($colores , 1);
+    background-color: nth($colores , 6);
 }
 
 .seccion-1 p strong {
@@ -67,7 +68,7 @@
 
 .tarjetas {
     box-shadow: $sombra-negra;
-    margin: map-get($mg-pad, margen);
+    margin: 10px;
     transition: all 0.5s ease;
 }
 
@@ -75,4 +76,16 @@
     cursor: pointer;
     box-shadow: $sombra-verde-osc;
     border-image: space;
+}
+
+.card-body {
+    background-color: nth($colores , 5 );
+
+}
+
+.card-body h5, .card-body p {
+    color: nth($colores , 2);
+    background-color: nth($colores , 6 );
+    text-align: center;
+    font-size: 18px;
 }

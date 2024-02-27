@@ -1,0 +1,97 @@
+/* HOJA ESTILOS CONTACTO */
+
+/* Estilos para contacto - formulario */
+
+.contenedorcontacto {
+    background: linear-gradient(0deg, rgb(255, 255, 255) 18%, rgb(85, 87, 85) 100%);
+    background-image: url(../../images/back-farmacia-sini.jpg);
+    backdrop-filter: blur(5px);
+}
+
+.contenedor-formulario {
+    font-family: $fuente-ppal;
+    width: 30%;
+    height: fit-content;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: $border-radio-ppal;
+    box-shadow: $sombra-oscura;
+    color: nth($colores , 2);
+    background-color: nth($colores , 5);
+}
+
+.contenedor-formulario h2 {
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+}
+
+
+.formulario-contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: map-get($mg-pad , margen );
+}
+
+label {
+    text-align: center;
+    font-weight: bolder;
+    margin: map-get($mg-pad , margen );
+}
+
+/* Inputs */
+
+input, textarea {
+    width: 100%;
+    display: block;
+    padding: 10px 10px;
+    margin: 15px 20px;
+    border-radius: $border-radio-ppal;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    cursor: pointer;
+    border: 2px solid #38B53E;
+}
+
+input:focus {
+    cursor: text;
+    box-shadow: 0 0 10px rgba(56, 181, 62, 1);
+}
+
+
+textarea:hover {
+    cursor: pointer;
+    border: 2px solid #38B53E;
+}
+
+textarea:focus {
+    cursor: text;
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(56, 181, 62, 1);
+}
+
+/* Botones de formulario */
+
+.btnformulario {
+    display: flex;
+    justify-content: space-between;
+    margin: map-get($mg-pad , margen );
+    padding: map-get($mg-pad , pad );
+    background-color: nth($colores , 6);
+    color: nth($colores , 2);
+    border: none;
+    font-size: large;
+    width: 40%;
+    transition: all 0.5s ease-in-out;
+}
+
+.btnformulario:hover {
+    cursor: pointer;
+    background-color: nth($colores , 5);
+}

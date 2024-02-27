@@ -1,0 +1,81 @@
+/* Hojas estilos PERSONAL */
+
+.personalcontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: nth($colores , 1 );
+    color: nth($colores , 2);
+    height: 100%;
+}
+
+.slide-in-bck-center {
+    -webkit-animation: slide-in-bck-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-bck-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/**
+   * ----------------------------------------
+   * animation slide-in-bck-center
+   * ----------------------------------------
+   */
+@-webkit-keyframes slide-in-bck-center {
+    0% {
+        -webkit-transform: translateZ(600px);
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bck-center {
+    0% {
+        -webkit-transform: translateZ(600px);
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.personalcontainer h2 {
+    font-family: $fuente-ppal;
+    text-align: center;
+    font-size: 35px;
+}
+
+.personalcontainer p {
+    font-family: $fuente-sec;
+    text-align: left;
+    font-size: 20px;
+    background-color: nth($colores , 3);
+}
+
+.personalcontainer p span {
+    color: nth($colores , 6);
+    font-weight: bold;
+}
+
+.personaldetalle {
+    margin: map-get($mg-pad , margen );
+    padding: map-get($mg-pad , pad );
+    background-color: nth($colores , 3);
+    border-radius: $border-radio-ppal;
+    box-shadow: 0 0 10px rgb(85, 87, 85);
+    width: 50%;
+}
+
+.img-personal {
+    width: 100%;
+    border-radius: $border-radio-ppal;
+}

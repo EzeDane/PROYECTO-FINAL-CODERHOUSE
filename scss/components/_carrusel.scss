@@ -1,0 +1,58 @@
+/* INICIO ESTILOS HOJA PRODUCTOS */
+
+.carrusel-contenedor {
+    border-radius: $border-radio-ppal;
+}
+
+.carrusel-contenedor-principal {
+    @extend %propiedad-flex-ppal;
+    flex-wrap: wrap;
+    padding: map-get($mg-pad , pad);
+    background-color: nth($colores , 4);
+    border-bottom: 4px solid nth($colores , 5);
+}
+
+h2 {
+    color: nth($colores , 2 );
+    font-family: $fuente-ppal;
+    font-weight: bold;
+}
+
+.slides-personales {
+    width: 60%;
+    height: fit-content;
+    color: nth($colores , 2);
+    margin: map-get($mg-pad , margen);
+    padding: map-get($mg-pad , pad);
+    box-shadow: $sombra-verde-osc;
+    border-radius: $border-radio-ppal;
+}
+
+h5 {
+    width: 100%;
+    font-size: 25px;
+    border-radius: $border-radio-ppal;
+    padding: 3px;
+    background-color: nth($colores , 8);
+}
+
+p {
+    font-size: 20px;
+    background-color: nth($colores , 5);
+    border-radius: $border-radio-ppal;
+}
+
+
+.detalles-fotos {
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: $border-radio-ppal;
+}
+
+.contenedor-productos-varios {
+    background: $background-header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
