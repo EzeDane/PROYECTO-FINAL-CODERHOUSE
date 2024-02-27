@@ -303,27 +303,26 @@ footer p {
 .carrusel-contenedor-principal {
   flex-wrap: wrap;
   padding: 10px;
-  background-color: #191516;
+  background-color: #707070;
   border-bottom: 4px solid #444444;
 }
 
-h2 {
+.carrusel-contenedor-principal h2 {
   color: #F0F7F4;
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
 
 .slides-personales {
-  width: 60%;
+  width: 65%;
   height: fit-content;
   color: #F0F7F4;
   margin: 15px;
   padding: 10px;
-  box-shadow: 0 4px 10px 15px rgba(12, 177, 1, 0.3);
   border-radius: 20px;
 }
 
-h5 {
+.slides-personales h5 {
   width: 100%;
   font-size: 25px;
   border-radius: 20px;
@@ -331,7 +330,7 @@ h5 {
   background-color: #38B53E;
 }
 
-p {
+.slides-personales p {
   font-size: 20px;
   background-color: #444444;
   border-radius: 20px;
@@ -387,6 +386,7 @@ p {
   background: linear-gradient(90deg, rgb(240, 247, 244) 18%, rgb(56, 181, 62) 100%);
   border-radius: 20px;
   box-shadow: 0 4px 10px 8px rgba(0, 0, 0, 0.3);
+  color: #191516;
   text-align: center;
   padding: 10px;
   margin: 10px;
@@ -748,20 +748,20 @@ textarea:focus {
   .carrusel-contenedor-principal h2 {
     margin: 10px;
     width: 100%;
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
   }
   .slides-personales {
-    width: 95%;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
   .slides-personales h5 {
-    font-size: 10px;
+    font-size: 2px;
     padding: 0;
   }
   .slides-personales h5 p {
-    font-size: 10px;
+    font-size: 1px;
   }
   .detalles-fotos {
     width: 40%;

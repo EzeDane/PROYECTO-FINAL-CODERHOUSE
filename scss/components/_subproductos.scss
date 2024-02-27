@@ -34,10 +34,11 @@
 .Producto-1,
 .Producto-2,
 .Producto-3,
-.Producto-4 {
+.Producto-4{
     background: $background-header;
     border-radius: $border-radio-ppal;
     box-shadow: $sombra-negra;
+    color: nth($colores , 4 );
     text-align: center;
     padding: 10px;
     margin: 10px;
