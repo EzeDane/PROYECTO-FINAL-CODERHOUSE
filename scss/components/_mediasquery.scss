@@ -331,13 +331,13 @@
 /* Media query para hoja CONTACTO FORMATO TABLET */
 @include media-up (md) {
     .contenedor-formulario {
-        width: 93%;
+        width: 40%;
     }
 }
 
 @include media-up (lg) {
     .contenedor-formulario {
-        width: 50%;
+        width: 93%;
     }
 }
 

@@ -412,7 +412,7 @@ footer p {
 
 .contenedor-formulario {
   font-family: "Noto Sans", sans-serif;
-  width: 40%;
+  width: 30%;
   height: fit-content;
   margin: 40px auto;
   padding: 20px;
@@ -892,12 +892,12 @@ textarea:focus {
 /* Media query para hoja CONTACTO FORMATO TABLET */
 @media only screen and (max-width: 768px) {
   .contenedor-formulario {
-    width: 93%;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 1024px) {
   .contenedor-formulario {
-    width: 50%;
+    width: 93%;
   }
 }
 /* Media query para hoja PERSONAL FORMATO MOBILE */
