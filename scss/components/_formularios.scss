@@ -33,18 +33,19 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    margin: map-get($mg-pad , margen );
+    margin: map-get($mg-pad , margen);
 }
 
 label {
     text-align: center;
     font-weight: bolder;
-    margin: map-get($mg-pad , margen );
+    margin: map-get($mg-pad , margen);
 }
 
 /* Inputs */
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     display: block;
     padding: 10px 10px;
@@ -56,6 +57,7 @@ input, textarea {
 
 input:hover {
     cursor: pointer;
+    background-color: nth($colores , 1);
     border: 2px solid #38B53E;
 }
 
@@ -67,6 +69,7 @@ input:focus {
 
 textarea:hover {
     cursor: pointer;
+    background-color: nth($colores , 1);
     border: 2px solid #38B53E;
 }
 
@@ -80,17 +83,20 @@ textarea:focus {
 .btnformulario {
     display: flex;
     justify-content: space-between;
-    margin: map-get($mg-pad , margen );
-    padding: map-get($mg-pad , pad );
+    margin: map-get($mg-pad , margen);
+    padding: map-get($mg-pad , pad);
     background-color: nth($colores , 6);
     color: nth($colores , 2);
     border: none;
-    font-size: large;
+    font-size: 20px;
     width: 40%;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+
 
 .btnformulario:hover {
     cursor: pointer;
-    background-color: nth($colores , 5);
+    background-color: nth($colores , 4);
 }
+
+

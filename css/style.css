@@ -445,7 +445,8 @@ label {
 }
 
 /* Inputs */
-input, textarea {
+input,
+textarea {
   width: 100%;
   display: block;
   padding: 10px 10px;
@@ -457,6 +458,7 @@ input, textarea {
 
 input:hover {
   cursor: pointer;
+  background-color: #DFF3E3;
   border: 2px solid #38B53E;
 }
 
@@ -467,6 +469,7 @@ input:focus {
 
 textarea:hover {
   cursor: pointer;
+  background-color: #DFF3E3;
   border: 2px solid #38B53E;
 }
 
@@ -484,14 +487,14 @@ textarea:focus {
   background-color: #38B53E;
   color: #F0F7F4;
   border: none;
-  font-size: large;
+  font-size: 20px;
   width: 40%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btnformulario:hover {
   cursor: pointer;
-  background-color: #444444;
+  background-color: #191516;
 }
 
 /* Hojas estilos PERSONAL */
