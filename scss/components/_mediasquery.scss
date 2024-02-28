@@ -317,7 +317,7 @@
 
     .contenedor-formulario {
         width: 100%;
-        margin: 15px auto;
+        margin: 15px;
         height: fit-content;
         background-color: nth($colores , 4);
     }
@@ -337,6 +337,12 @@
 
 /* Media query para hoja CONTACTO FORMATO TABLET */
 @include media-up (md) {
+    .contenedor-formulario {
+        width: 93%;
+    }
+}
+
+@include media-up (lg) {
     .contenedor-formulario {
         width: 50%;
     }

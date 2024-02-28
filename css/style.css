@@ -406,7 +406,6 @@ footer p {
 /* HOJA ESTILOS CONTACTO */
 /* Estilos para contacto - formulario */
 .contenedorcontacto {
-  background: linear-gradient(0deg, rgb(255, 255, 255) 18%, rgb(85, 87, 85) 100%);
   background-image: url(../../images/back-farmacia-sini.jpg);
   backdrop-filter: blur(5px);
 }
@@ -883,7 +882,7 @@ textarea:focus {
 @media only screen and (max-width: 460px) {
   .contenedor-formulario {
     width: 100%;
-    margin: 15px auto;
+    margin: 15px;
     height: fit-content;
     background-color: #191516;
   }
@@ -898,6 +897,11 @@ textarea:focus {
 }
 /* Media query para hoja CONTACTO FORMATO TABLET */
 @media only screen and (max-width: 768px) {
+  .contenedor-formulario {
+    width: 93%;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .contenedor-formulario {
     width: 50%;
   }
