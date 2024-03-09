@@ -1,7 +1,7 @@
 ﻿<h1 align="center">Hi 👋, I'm Ezequiel Andrés Daneluz</h1>
 <h3 align="center">Ingeniero Industrial y estudiante del curso de Desarrollo Web de la academia CODERHOUSE</h3>
 
-- 🔭 Estoy trabajando en la preentrega N° 3 del proyecto final [preentrega N° 3](https://ezedane.github.io/Pre-entrega-3-Daneluz/)
+- 🔭 Este es el resultado de mi proyecto final para la aprobación del curso de "Desarrollo Web" para la academia CODERHOUSE. Se trata de un proyecto freelance para una farmacia de mi localidad. Se tuvieron en cuenta los requisitos de diseño y colores que la empresa me proporcionó. Además, coloqué algunos cambios en estilos y colores para darle más dinamismo a la página en cuestión, siempre con la supervisión del cliente. [Proyecto Final](https://ezedane.github.io/Pre-entrega-3-Daneluz/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
