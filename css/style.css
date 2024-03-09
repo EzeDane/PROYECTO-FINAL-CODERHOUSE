@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -125,7 +126,7 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #38B53E;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #F0F7F4;
   margin-top: 0;
   padding: 10px;
@@ -193,6 +194,8 @@ footer {
   background-color: #38B53E;
   text-align: center;
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
 }
 
 /* Estilos footer o Pie de página */
@@ -330,6 +333,7 @@ footer p {
 }
 
 .slides-personales p {
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   background-color: #444444;
   border-radius: 20px;
@@ -411,8 +415,8 @@ footer p {
 }
 
 .contenedor-formulario {
-  font-family: "Noto Sans", sans-serif;
-  width: 30%;
+  font-family: "Poppins", sans-serif;
+  width: 65%;
   height: fit-content;
   margin: 40px auto;
   padding: 20px;
@@ -549,7 +553,7 @@ textarea:focus {
 }
 
 .personalcontainer p {
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   font-size: 20px;
   background-color: #707070;
@@ -576,8 +580,8 @@ textarea:focus {
 
 /* Estilos para el acordeon */
 .estilo-acordeon {
-  font-family: "Nunito", sans-serif;
-  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -601,7 +605,7 @@ textarea:focus {
   margin: 0;
   background-color: #707070;
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #F0F7F4;
   height: 80vh;
 }

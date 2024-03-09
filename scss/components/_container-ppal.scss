@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     background-color: nth($colores , 6);
-    font-family: $fuente-ppal;
+    font-family: $fuente-ter;
     color: nth($colores , 2);
     margin-top: 0;
     padding: map-get($mg-pad , pad);
@@ -88,4 +88,6 @@
     background-color: nth($colores , 6 );
     text-align: center;
     font-size: 18px;
+    font-family: $fuente-ter;
+    border-radius: $border-radio-ppal;
 }
